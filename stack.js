@@ -1,7 +1,5 @@
 /**Stacks */
 
-const { func } = require('prop-types')
-
 /**Funcitons : push, pop, peek, length */
 
 //! Using array as an stack
