@@ -22,7 +22,7 @@ function Queue() {
   }
 }
 
-var q = new Queue()
+let q = new Queue()
 q.enqueue('a')
 q.enqueue('b')
 q.enqueue('c')
@@ -32,7 +32,7 @@ console.log(q.front())
 q.print()
 
 function PriorityQueue() {
-  var collection = []
+  let collection = []
   this.printCollection = function () {
     console.log(collection)
   }
@@ -40,8 +40,8 @@ function PriorityQueue() {
     if (this.isEmpty()) {
       collection.push(element)
     } else {
-      var added = false
-      for (var i = 0; i < collection.length; i++) {
+      let added = false
+      for (let i = 0; i < collection.length; i++) {
         if (element[1] < collection[i][1]) {
           //checking priorities
           collection.splice(i, 0, element)
@@ -55,7 +55,7 @@ function PriorityQueue() {
     }
   }
   this.dequeue = function () {
-    var value = collection.shift()
+    let value = collection.shift()
     return value[0]
   }
   this.front = function () {
@@ -69,7 +69,7 @@ function PriorityQueue() {
   }
 }
 
-var pq = new PriorityQueue()
+let pq = new PriorityQueue()
 pq.enqueue(['Beau Carnes', 2])
 pq.enqueue(['Quincy Larson', 3])
 pq.enqueue(['Ewa Mitulska-Wójcik', 1])
