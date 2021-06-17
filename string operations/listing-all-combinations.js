@@ -24,4 +24,4 @@ let combinations = (str) => {
 	}
 	return resultArr
 }
-console.log(combinations('dog'))
+console.log(combinations('Dog'))
