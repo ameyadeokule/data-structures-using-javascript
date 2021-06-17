@@ -16,3 +16,25 @@ const isPalindrome = (str) => {
 }
 
 console.log(isPalindrome('racecar'))
+
+//Palindrome without reversing the string
+
+const check_palindrome = (str) => {
+	let j = str.length - 1
+	for (let i = 0; i < j / 2; i++) {
+		let x = str[i] //forward character
+		let y = str[j - i] //backward character
+		if (x != y) {
+			// return false if string not match
+			return false
+		}
+	}
+	/// return true if string is palindome
+	return true
+}
+
+const isPalindrome2 = (str) => {
+	return (_isPalindrome = check_palindrome(str))
+}
+
+console.log(isPalindrome2('racecar'))
